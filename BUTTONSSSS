@@ -1,0 +1,36 @@
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.Color;
+import javax.swing.JPanel;
+
+class Button extends JFrame{
+    final int SIZE = 600;
+    Container con = getContentPane();
+    JButton button =  new JButton("button");
+
+    public Button() {
+        super("Button");
+        setSize(100,100);
+        con.setLayout(new FlowLayout());
+        con.add(button);
+        con.setBackground(Color.WHITE);
+        button.setBackground(Color.blue);
+        button.setForeground(Color.GREEN);
+    }
+
+}
+
+public class DATA extends JPanel {
+
+    public static void main(String[] args) {
+
+        Button frame = new Button();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.setSize(450,600);
+
+    }
+
+}
