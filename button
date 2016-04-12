@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+
+public class Exercise3 {
+    
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+        int z;
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        x = in.nextInt();
+
+        System.out.println("Enter a second number: ");
+        y = in.nextInt();
+
+        z = x + y;
+
+        System.out.println("The sum of both numbers: " + z);
+    }
+}
